@@ -62,27 +62,6 @@ namespace SwitchAB
                 
                 if(trials.Count() > 0)
                 {
-                    var client = new HttpClient();
-                    client.BaseAddress = new Uri("http://localhost:56851/");
-
-                    client.DefaultRequestHeaders.Accept.Add(
-                       new MediaTypeWithQualityHeaderValue("application/json"));
-var response = client.PostAsJsonAsync("api/User", user).Result;
-
-                    if (response.IsSuccessStatusCode)
-                    {
-                        MessageBox.Show("User Added");
-                        txtFirst.Text = "";
-                        txtLas.Text = "";
-                        txtPhone.Text = "";
-                        txtEmail.Text = "";
-                        txtCompany.Text = "";
-                        GetData();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Error Code" + response.StatusCode + " : Message - " + response.ReasonPhrase);
-                    }
 
                     sync.SyncDate = DateTime.Now.ToUniversalTime();
                     this.databaseConnection.Update(sync);
