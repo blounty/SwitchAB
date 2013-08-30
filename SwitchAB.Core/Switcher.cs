@@ -6,6 +6,10 @@ using XPlatUtils;
 using SwitchAB.Core.Models;
 using System.Net;
 using System.Linq;
+using System.Threading.Tasks;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Text;
 
 
 namespace SwitchAB
@@ -30,7 +34,7 @@ namespace SwitchAB
             }
         }
 
-		public void Setup(string apiKey)
+		public void Setup(string apiKey, string baseUrl)
 		{
             //TODO: Wrap this in a Task.Factory.StartNew
             RandomGenerator = new Random((int)DateTime.UtcNow.Ticks);
@@ -67,11 +71,18 @@ namespace SwitchAB
 
 					var client = new HttpClient ();
 
+					client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+					HttpRequestMessage req = new HttpRequestMessage(HttpMethod.Post, string.Format("{0}api/trials/update", baseUrl));
+					req.Content = new StringContent(Newtonsoft.Json.JsonConvert.SerializeObject(trials), Encoding.UTF8, "application/json");
+
+					var response = client.SendAsync (req).Result;
+
+					//var response = client.GetAsync("http://192.168.190.31/switchab.web/api/trials/spoons").Result.Content.ReadAsStringAsync().Result;
                     this.databaseConnection.Update(sync);
                 }
             }
 		}
-
+		  
 		public void TargetAchieved(string targetName)
 		{          
             var targetsTable = this.databaseConnection.Table<Target>();
