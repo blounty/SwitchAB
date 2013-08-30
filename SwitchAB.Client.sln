@@ -58,13 +58,17 @@ Global
 		{7255ECE5-4D42-4943-896A-AADE113460AF}.Ad-Hoc|Any CPU.ActiveCfg = Release|Any CPU
 		{7255ECE5-4D42-4943-896A-AADE113460AF}.Ad-Hoc|Any CPU.Build.0 = Release|Any CPU
 		{7255ECE5-4D42-4943-896A-AADE113460AF}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
+		{7255ECE5-4D42-4943-896A-AADE113460AF}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
 		{7255ECE5-4D42-4943-896A-AADE113460AF}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{7255ECE5-4D42-4943-896A-AADE113460AF}.Ad-Hoc|iPhoneSimulator.Build.0 = Release|Any CPU
 		{7255ECE5-4D42-4943-896A-AADE113460AF}.Ad-Hoc|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{7255ECE5-4D42-4943-896A-AADE113460AF}.Ad-Hoc|Mixed Platforms.Build.0 = Release|Any CPU
 		{7255ECE5-4D42-4943-896A-AADE113460AF}.AppStore|Any CPU.ActiveCfg = Release|Any CPU
 		{7255ECE5-4D42-4943-896A-AADE113460AF}.AppStore|Any CPU.Build.0 = Release|Any CPU
 		{7255ECE5-4D42-4943-896A-AADE113460AF}.AppStore|iPhone.ActiveCfg = Release|Any CPU
+		{7255ECE5-4D42-4943-896A-AADE113460AF}.AppStore|iPhone.Build.0 = Release|Any CPU
 		{7255ECE5-4D42-4943-896A-AADE113460AF}.AppStore|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{7255ECE5-4D42-4943-896A-AADE113460AF}.AppStore|iPhoneSimulator.Build.0 = Release|Any CPU
 		{7255ECE5-4D42-4943-896A-AADE113460AF}.AppStore|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{7255ECE5-4D42-4943-896A-AADE113460AF}.AppStore|Mixed Platforms.Build.0 = Release|Any CPU
 		{7255ECE5-4D42-4943-896A-AADE113460AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -78,7 +82,9 @@ Global
 		{7255ECE5-4D42-4943-896A-AADE113460AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7255ECE5-4D42-4943-896A-AADE113460AF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7255ECE5-4D42-4943-896A-AADE113460AF}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{7255ECE5-4D42-4943-896A-AADE113460AF}.Release|iPhone.Build.0 = Release|Any CPU
 		{7255ECE5-4D42-4943-896A-AADE113460AF}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{7255ECE5-4D42-4943-896A-AADE113460AF}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{7255ECE5-4D42-4943-896A-AADE113460AF}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{7255ECE5-4D42-4943-896A-AADE113460AF}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{D2E14B6C-796D-4BF3-8E01-A599197BCA52}.Ad-Hoc|Any CPU.ActiveCfg = Ad-Hoc|iPhone

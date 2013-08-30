@@ -64,6 +64,9 @@ namespace SwitchAB
                 {
 
                     sync.SyncDate = DateTime.Now.ToUniversalTime();
+
+					var client = new HttpClient ();
+
                     this.databaseConnection.Update(sync);
                 }
             }
