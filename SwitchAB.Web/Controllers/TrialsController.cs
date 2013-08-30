@@ -10,6 +10,8 @@ namespace SwitchAB.Web.Controllers
 {
     public class TrialsController : ApiController
     {
+        [HttpPost]
+        [ActionName("update")]
         public HttpResponseMessage UpdateTrials(List<Trial> trials)
         {
             if (trials != null && trials.Count() > 0)
