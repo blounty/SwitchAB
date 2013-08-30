@@ -16,7 +16,7 @@ namespace SwitchAB.Samples.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             SwitcherInitializer.Bootstrap();
-            Switcher.Current.Setup("apiKey");
+			Switcher.Current.Setup("apiKey", "http://192.168.190.31/switchab.web/");
 
             window = new UIWindow(UIScreen.MainScreen.Bounds);
 

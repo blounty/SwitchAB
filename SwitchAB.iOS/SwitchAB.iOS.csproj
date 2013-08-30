@@ -56,6 +56,9 @@
     <Reference Include="Cirrious.MvvmCross.Plugins.Sqlite.Touch">
       <HintPath>..\lib\iOS\Cirrious.MvvmCross.Plugins.Sqlite.Touch.dll</HintPath>
     </Reference>
+    <Reference Include="System.Linq.Expressions">
+      <HintPath>..\lib\iOS\System.Linq.Expressions.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
