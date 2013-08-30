@@ -1,16 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone.7.0" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone.5.0" />
   <MonoDevelop.Ide.Workbench ActiveDocument="SwitchAB.Core/Switcher.cs">
     <Files>
-      <File FileName="SwitchAB.Core/Switcher.cs" Line="8" Column="18" />
+      <File FileName="SwitchAB.Core/Switcher.cs" Line="68" Column="26" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Samples" expanded="True" />
-          <Node name="SwitchAB.Core" expanded="True" selected="True">
-            <Node name="Models" expanded="True" />
-          </Node>
+          <Node name="SwitchAB.Core" expanded="True" />
           <Node name="SwitchAB.iOS" expanded="True" />
         </State>
       </Pad>

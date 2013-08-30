@@ -6,6 +6,8 @@ using XPlatUtils;
 using SwitchAB.Core.Models;
 using System.Net;
 using System.Linq;
+using System.Net.Http;
+using System.Net.Http.Headers;
 
 
 namespace SwitchAB
@@ -30,7 +32,7 @@ namespace SwitchAB
             }
         }
 
-		public void Setup(string apiKey)
+		public async Task Setup(string apiKey)
 		{
             //TODO: Wrap this in a Task.Factory.StartNew
             RandomGenerator = new Random((int)DateTime.UtcNow.Ticks);
@@ -66,7 +68,12 @@ namespace SwitchAB
                     sync.SyncDate = DateTime.Now.ToUniversalTime();
 
 					var client = new HttpClient ();
+					client.BaseAddress = new Uri("http://localhost:56851/");
 
+					client.DefaultRequestHeaders.Accept.Add(
+						new MediaTypeWithQualityHeaderValue("application/json"));
+
+					await client.PostAsJsonAsync ("api/Blah", trials);
                     this.databaseConnection.Update(sync);
                 }
             }
