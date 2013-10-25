@@ -93,19 +93,28 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="monotouch" />
-    <Reference Include="System.Linq.Expressions">
-      <HintPath>..\lib\iOS\System.Linq.Expressions.dll</HintPath>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Sqlite.Touch">
+      <HintPath>..\..\..\Downloads\MvvmCross-Binaries-master-1\VS2012\bin\Release\Mvx\Touch\Cirrious.MvvmCross.Plugins.Sqlite.Touch.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Sqlite">
+      <HintPath>..\..\..\Downloads\MvvmCross-Binaries-master-1\VS2012\bin\Release\Mvx\Portable\Cirrious.MvvmCross.Plugins.Sqlite.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\Downloads\Parse-1-1\Parse.iOS\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Parse.iOS">
+      <HintPath>..\..\..\Downloads\Parse-1-1\Parse.iOS\Parse.iOS.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\SwitchAB.Core\SwitchAB.Core.csproj">
-      <Project>{7255ECE5-4D42-4943-896A-AADE113460AF}</Project>
-      <Name>SwitchAB.Core</Name>
+    <ProjectReference Include="..\SwitchAB\SwitchAB.csproj">
+      <Project>{2485FDF3-2B90-4994-8EE9-E7C365E8DD53}</Project>
+      <Name>SwitchAB</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SwitchAB.iOS\SwitchAB.iOS.csproj">
-      <Project>{06DA52F7-E4F5-482E-A248-D57FF8FBF869}</Project>
-      <Name>SwitchAB.iOS</Name>
+    <ProjectReference Include="..\SwitchAB.Analytics.Parse\SwitchAB.Analytics.Parse.csproj">
+      <Project>{C1CDC710-7B9B-4382-A78F-B8DC5B0DF8B7}</Project>
+      <Name>SwitchAB.Analytics.Parse</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

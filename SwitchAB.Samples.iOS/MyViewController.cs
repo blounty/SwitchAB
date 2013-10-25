@@ -2,6 +2,7 @@ using System;
 using MonoTouch.UIKit;
 using System.Drawing;
 using System.Collections.Generic;
+using SwitchAB.Models;
 
 namespace SwitchAB.Samples.iOS
 {
@@ -32,23 +33,23 @@ namespace SwitchAB.Samples.iOS
                 buttonWidth,
                 buttonHeight);
 
-            Switcher.Current.TestWithTarget("ClickButtonText", new List<Action>
-            {               
-                () => 
-                {
-                     button.SetTitle("Click me", UIControlState.Normal);
-                },
-                () => 
-                {
-                     button.SetTitle("Dont Click me", UIControlState.Normal);
-                }
-
+			Switcher.Current.BeginTrial(new Trial("ClickButton", new Target[]
+				{               
+					new Target("Do Click", () => 
+                		{
+                     		button.SetTitle("Click me", UIControlState.Normal);
+						}),
+					new Target("Dont Click", () => 
+                		{
+                     		button.SetTitle("Dont Click me", UIControlState.Normal);
+						})
+				}
            
-            });
+			));
 
             button.TouchUpInside += (object sender, EventArgs e) =>
             {
-                Switcher.Current.TargetAchieved("ClickButtonText"); 
+				Switcher.Current.TrialSucceeded("ClickButton"); 
             };
 
             button.AutoresizingMask = UIViewAutoresizing.FlexibleWidth | UIViewAutoresizing.FlexibleTopMargin |

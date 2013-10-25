@@ -1,9 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.Alex's iPad" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone.7.0" />
   <MonoDevelop.Ide.Workbench ActiveDocument="SwitchAB.Core/Switcher.cs">
     <Files>
-      <File FileName="SwitchAB.Core/Switcher.cs" Line="35" Column="3" />
-      <File FileName="SwitchAB.Samples.iOS/MyViewController.cs" Line="1" Column="1" />
+      <File FileName="SwitchAB.Core/Switcher.cs" Line="81" Column="1" />
+      <File FileName="SwitchAB.Samples.iOS/MyViewController.cs" Line="36" Column="12" />
+      <File FileName="SwitchAB.iOS/SwitcherInitializer.cs" Line="1" Column="1" />
+      <File FileName="SwitchAB.Samples.iOS/AppDelegate.cs" Line="19" Column="73" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,8 +15,8 @@
               <Node name="References" expanded="True" />
             </Node>
           </Node>
-          <Node name="SwitchAB.Core" expanded="True" selected="True">
-            <Node name="References" expanded="True" />
+          <Node name="SwitchAB.Core" expanded="True">
+            <Node name="Switcher.cs" selected="True" />
           </Node>
           <Node name="SwitchAB.iOS" expanded="True" />
         </State>
@@ -31,8 +33,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/ablount/Projects/SwitchAB/SwitchAB.Core/Switcher.cs" line="70" column="1" />
-      <Breakpoint file="/Users/ablount/Projects/SwitchAB/SwitchAB.Core/Switcher.cs" line="53" column="1" />
+      <Breakpoint file="/Users/ablount/Projects/SwitchAB/SwitchAB.Core/Switcher.cs" line="81" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
