@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -40,13 +40,10 @@
     <Compile Include="Models\TrialData.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
-  <ItemGroup>
-    <Folder Include="Models\" />
-    <Folder Include="Analytics\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Reference Include="Cirrious.MvvmCross.Plugins.Sqlite">
-      <HintPath>..\..\..\Downloads\MvvmCross-Binaries-master-1\VS2012\bin\Release\Mvx\Portable\Cirrious.MvvmCross.Plugins.Sqlite.dll</HintPath>
+      <HintPath>..\lib\Portable\Cirrious.MvvmCross.Plugins.Sqlite.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http">
       <HintPath>..\packages\Microsoft.Net.Http.2.2.13\lib\portable-net40+sl4+win8+wp71\System.Net.Http.dll</HintPath>
